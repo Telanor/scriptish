@@ -21,7 +21,7 @@ function Scriptish_BrowserUIM(aWin, aBrowserUI) {
 Scriptish_BrowserUIM.prototype = {
   onIconClick: function(aEvt) {
     if (aEvt.button === 1 && aEvt.target.id === "scriptish-button") {
-      Scriptish_openManager();
+      this.onToggleStatus();
       aEvt.preventDefault();
       aEvt.stopPropagation();
     }
